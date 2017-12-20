@@ -1,18 +1,17 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-
 // job Schema
 const JobSchema = new Schema({
-  title:{
+  title: {
     type: String,
     required: [true, 'Title field is required']
   },
-  description:{
+  description: {
     type: String,
     required: [true, 'Description field is required']
   },
-  isAvailable:{
+  isAvailable: {
     type: Boolean,
     default: true
   }
